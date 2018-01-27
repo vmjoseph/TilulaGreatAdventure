@@ -14,10 +14,13 @@
         <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -50,7 +53,7 @@
     <object-folder>
         <object-type name="9patch" sid="617066287546470">
             <plugin id="NinePatch" />
-            <texture original-source="C:\Users\valli_000\Downloads\min (1).png" />
+            <texture original-source="C:\Users\valli_000\Downloads\sky_background.png" />
         </object-type>
         <object-type name="ground" sid="692397685068924">
             <plugin id="Sprite" />
@@ -94,7 +97,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="669782076364317" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500378" original-source="C:\Users\valli_000\Downloads\paper_icon.png">
+                        <collision-poly>
+                            <point x="0.0332031" y="0.0256992" />
+                            <point x="0.958008" y="0.0325019" />
+                            <point x="0.958008" y="0.967498" />
+                            <point x="0.0332031" y="0.974301" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -150,7 +160,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="605342466240084" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500378" original-source="C:\Users\valli_000\Downloads\paper_icon.png">
+                        <collision-poly>
+                            <point x="0.0332031" y="0.0256992" />
+                            <point x="0.958008" y="0.0325019" />
+                            <point x="0.958008" y="0.967498" />
+                            <point x="0.0332031" y="0.974301" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -158,7 +175,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="437828216449011" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500378" original-source="C:\Users\valli_000\Downloads\paper_icon.png">
+                        <collision-poly>
+                            <point x="0.0332031" y="0.0256992" />
+                            <point x="0.958008" y="0.0325019" />
+                            <point x="0.958008" y="0.967498" />
+                            <point x="0.0332031" y="0.974301" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -178,6 +202,28 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="917122659462905" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressBar" sid="388258163605517">
+            <plugin id="progressbar" />
+            <instance-variables>
+                <instance-variable comment="Stamina points" name="StaminaBarAmount" sid="528322756327150" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="Sprite2" sid="813112576708204">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="380427861563223">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="911251532728859">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="306354189022491" speed="5">
+                    <frame duration="1" hotspotX="1.13272" hotspotY="2.43478" original-source="C:\Users\valli_000\Downloads\cloud.png" />
                 </animation>
             </animation-folder>
         </object-type>

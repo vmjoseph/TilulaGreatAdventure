@@ -145,11 +145,11 @@
                         <x>348</x>
                         <y>387</y>
                         <z>0</z>
-                        <width>17</width>
-                        <height>21</height>
+                        <width>69.632003784</width>
+                        <height>111.132003784</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.500377953</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -167,11 +167,11 @@
                         <x>518</x>
                         <y>424</y>
                         <z>0</z>
-                        <width>21</width>
-                        <height>23</height>
+                        <width>86.01599884</width>
+                        <height>121.716003418</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.500377953</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -189,11 +189,11 @@
                         <x>642</x>
                         <y>389</y>
                         <z>0</z>
-                        <width>17</width>
-                        <height>24</height>
+                        <width>69.632003784</width>
+                        <height>127.008003235</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.500377953</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -328,6 +328,84 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ProgressBar" uid="12">
+                    <properties>
+                        <value>20</value>
+                        <maximum>20</maximum>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <id-optional></id-optional>
+                    </properties>
+                    <instance-variables>
+                        <StaminaBarAmount>20</StaminaBarAmount>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5</x>
+                        <y>57</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Layer 1" sid="581671740100051">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Sprite2" uid="13">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="DestroyOutsideLayout" />
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>81</x>
+                        <y>387</y>
+                        <z>0</z>
+                        <width>129.495605469</width>
+                        <height>45.962947845</height>
+                        <depth>0</depth>
+                        <hotspotX>1.13271606</hotspotX>
+                        <hotspotY>2.434782505</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

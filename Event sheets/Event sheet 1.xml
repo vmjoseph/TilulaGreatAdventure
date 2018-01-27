@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="CloudCounter" sid="403798679150281" static="0" type="number">1</variable>
+        <variable constant="0" name="StaminaBar" sid="153369989554625" static="0" type="number">20</variable>
         <event-block sid="893025791209136">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="237273479819972" type="player">
@@ -50,6 +52,74 @@
             </conditions>
             <actions>
                 <action id="-26" name="Restart layout" sid="202140099952304" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="178391902250610">
+            <conditions>
+                <condition id="2" name="Key is down" sid="353721204270537" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="367657828331352" type="ProgressBar">
+                    <param id="0" name="Instance variable">StaminaBarAmount</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="3" name="Set progress" sid="557967730489888" type="ProgressBar">
+                    <param id="0" name="Value">ProgressBar.StaminaBarAmount</param>
+                </action>
+                <action id="-16" name="Wait" sid="637718616602760" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-11" name="Add to" sid="359758558768424" type="ProgressBar">
+                    <param id="0" name="Instance variable">StaminaBarAmount</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="3" name="Set progress" sid="793586242316774" type="ProgressBar">
+                    <param id="0" name="Value">ProgressBar.StaminaBarAmount</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="964876660135867">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="390301161338819" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="354715589741248" type="Sprite2">
+                    <param id="0" name="Speed">0.05</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="302910360815311">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="910802508548241" type="System">
+                    <param id="0" name="Variable">CloudCounter</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="849548364852403" type="System">
+                    <param id="0" name="Object to create">Sprite2</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">81</param>
+                    <param id="3" name="Y">300</param>
+                </action>
+                <action id="-10" name="Add to" sid="740650046821197" type="System">
+                    <param id="0" name="Variable">CloudCounter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="268382721582554">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="225551062148500" type="Sprite2" />
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="376636025725215" type="System">
+                    <param id="0" name="Variable">CloudCounter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
     </events>
