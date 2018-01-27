@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="893025791209136">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="237273479819972" type="player">
+                    <param id="0" name="Object">papers</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="978614812162775" type="papers" />
+                <action id="-15" name="Set visible" sid="592704110311438" type="letter">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="459971085165320">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="688189010017005" type="player">
+                    <param id="0" name="Object">papers4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="677625523134685" type="papers4" />
+                <action id="-15" name="Set visible" sid="926649465217711" type="letter3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="613866016591506">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="460515820832980" type="player">
+                    <param id="0" name="Object">papers5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="631042456872182" type="papers5" />
+                <action id="-15" name="Set visible" sid="634883936114716" type="letter4">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="666953243188133">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="412599745836959" type="Keyboard">
+                    <param id="0" name="Key">81</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="202140099952304" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
